@@ -26,10 +26,10 @@ p = profiler.Profiler(interval=0.00001)
 p.start()
 
 for f in [a_create, b_read, c_session]:
-	for uc in [False, True]:
-		for uo in [False, True]:
-			for sc in [False, True]:
-				for id in [None, 0, 2, "\t"]:
+	for _ in [False, True]:
+		for _ in [False, True]:
+			for _ in [False, True]:
+				for _ in [None, 0, 2, "\t"]:
 					# TODO: missing configs
 					f()
 
